@@ -2,7 +2,7 @@ import FlagConnectors from './flag-connector'
 
 export default function Hero() {
     return (
-        <div className="w-full max-w-[1230px] mx-auto">
+        <div className="w-full max-w-[1230px] mx-auto p-2">
             <div className="mt-2">
                 <h1
                     className="bg-[linear-gradient(90deg,#AA670D_0%,#FAD44B_18%,#F7EC95_31%,#FFC946_47%,#FAC026_61%,#FAEA07_73%,#AA670D_88%,#E09127_100%)] bg-clip-text text-transparent 
