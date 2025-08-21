@@ -17,7 +17,7 @@ export default function HeroVn() {
                 </p>
             </div>
             <div className="max-w-[800px] mx-auto my-7 md:my-15">
-                <Flags />
+                <Flags country="VN" />
             </div>
             <div className="text-center mt-5 mx-auto md:w-[40%] md:mt-10">
                 <p className="text-white leading-5">
