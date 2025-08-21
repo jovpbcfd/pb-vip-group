@@ -41,24 +41,28 @@ export default function Flags() {
                 </Link>
             </div>
             <div>
-                <Image
-                    src="/img/flag-circles/vn.gif"
-                    alt="Bangladesh"
-                    width={120}
-                    height={120}
-                    className="w-[60px] h-[60px] md:w-[120px] md:h-[120px]"
-                    unoptimized
-                />
+                <Link href="/vietnam">
+                    <Image
+                        src="/img/flag-circles/vn.gif"
+                        alt="Bangladesh"
+                        width={120}
+                        height={120}
+                        className="w-[60px] h-[60px] md:w-[120px] md:h-[120px]"
+                        unoptimized
+                    />
+                </Link>
             </div>
             <div>
-                <Image
-                    src="/img/flag-circles/cb.gif"
-                    alt="Bangladesh"
-                    width={120}
-                    height={120}
-                    className="w-[60px] h-[60px] md:w-[120px] md:h-[120px]"
-                    unoptimized
-                />
+                <Link href="/cambodia">
+                    <Image
+                        src="/img/flag-circles/cb.gif"
+                        alt="Bangladesh"
+                        width={120}
+                        height={120}
+                        className="w-[60px] h-[60px] md:w-[120px] md:h-[120px]"
+                        unoptimized
+                    />
+                </Link>
             </div>
         </div>
     )

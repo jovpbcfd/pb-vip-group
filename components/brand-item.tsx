@@ -43,17 +43,35 @@ export default function GameBrandItem({ data }: { data: TGameBrandItem[] }) {
                                     />
                                 </div>
                             </div>
-                            <div className="flex items-center ml-2">
-                                {item.currencies.map((currency) => (
-                                    <Image
-                                        key={currency.name}
-                                        src={`/img/currency_flag/${currency.path}`}
-                                        width={20}
-                                        height={20}
-                                        alt={currency.name}
-                                    />
-                                ))}
-                            </div>
+                            {item.currencies.length >= 5 ? (
+                                <>
+                                    <div className="grid grid-cols-3 ml-2">
+                                        {item.currencies.map((currency) => (
+                                            <Image
+                                                key={currency.name}
+                                                src={`/img/currency_flag/${currency.path}`}
+                                                width={20}
+                                                height={20}
+                                                alt={currency.name}
+                                            />
+                                        ))}
+                                    </div>
+                                </>
+                            ) : (
+                                <>
+                                    <div className="flex items-center ml-2">
+                                        {item.currencies.map((currency) => (
+                                            <Image
+                                                key={currency.name}
+                                                src={`/img/currency_flag/${currency.path}`}
+                                                width={20}
+                                                height={20}
+                                                alt={currency.name}
+                                            />
+                                        ))}
+                                    </div>
+                                </>
+                            )}
                         </div>
                         <div className="mt-5">
                             <div className="flex items-center gap-x-2">

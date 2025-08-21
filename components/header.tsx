@@ -42,7 +42,14 @@ export default function Header() {
                                 </li>
                             </ul>
                         </nav>
-                        <button className="text-white">FLAG_BUTTON</button>
+                        <button className="text-white bg-[#31399A] px-[4px] py-[2px] rounded-sm md:ml-2">
+                            <Image
+                                src="/img/ph_header.png"
+                                width={30}
+                                height={30}
+                                alt="Philippine flag icon"
+                            />
+                        </button>
                     </div>
                 </div>
             </div>

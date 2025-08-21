@@ -58,28 +58,32 @@ export default function FlagConnectors() {
                 {/* Top Right */}
                 <div className="absolute top-[8%] right-[7%] md:top-[13%] md:right-[18%] flex items-center">
                     <div className="overflow-hidden cursor-pointer">
-                        <Image
-                            src="/img/flag-circles/vn.gif"
-                            alt="Bangladesh"
-                            width={120}
-                            height={120}
-                            className="shadow-lg w-[60px] h-[60px] md:w-[120px] md:h-[120px]"
-                            unoptimized
-                        />
+                        <Link href="/vietnam">
+                            <Image
+                                src="/img/flag-circles/vn.gif"
+                                alt="Bangladesh"
+                                width={120}
+                                height={120}
+                                className="shadow-lg w-[60px] h-[60px] md:w-[120px] md:h-[120px]"
+                                unoptimized
+                            />
+                        </Link>
                     </div>
                 </div>
 
                 {/* Bottom Right */}
                 <div className="absolute bottom-[8%] right-[7%] md:bottom-[7%] md:right-[18%] flex items-center">
                     <div className="overflow-hidden cursor-pointer">
-                        <Image
-                            src="/img/flag-circles/cb.gif"
-                            alt="Bangladesh"
-                            width={120}
-                            height={120}
-                            className="shadow-lg w-[60px] h-[60px] md:w-[120px] md:h-[120px]"
-                            unoptimized
-                        />
+                        <Link href="/cambodia">
+                            <Image
+                                src="/img/flag-circles/cb.gif"
+                                alt="Bangladesh"
+                                width={120}
+                                height={120}
+                                className="shadow-lg w-[60px] h-[60px] md:w-[120px] md:h-[120px]"
+                                unoptimized
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>
