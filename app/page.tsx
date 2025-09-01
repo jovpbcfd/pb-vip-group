@@ -17,7 +17,7 @@ export default function Home() {
             <GroupVipBrands />
             <AllianceCasino />
             <AllianceJoin />
-            {/* <NewsAndVideos /> */}
+            <NewsAndVideos />
             {/* <Brandambassador /> */}
             <SecuredAndCertified />
             <FAQ />
