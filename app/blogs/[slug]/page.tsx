@@ -1,10 +1,11 @@
 import { client } from '@/lib/client'
 import { apiBySlug } from '@/lib/api'
 import BlogBody from '../_components/blog-post'
+import { notFound } from 'next/navigation'
 
 export async function generateStaticParams() {
     const query = '*[_type == $type]{ slug }'
-    const params = { type: 'post-mega' }
+    const params = { type: 'post-pb-vip-group' }
 
     const posts = await client.fetch(query, params)
 
@@ -17,6 +18,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params
     const blog = await apiBySlug(slug)
+
     const currentPost = blog?.data?.currentPost ?? {}
 
     return {
@@ -48,6 +50,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     const { slug } = await params
 
     const blog = await apiBySlug(slug)
+
+    if (!blog.data) {
+        return notFound()
+    }
 
     const { currentPost } = blog?.data
 
