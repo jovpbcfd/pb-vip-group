@@ -19,8 +19,6 @@ export default function NewsAndVideos() {
     useEffect(() => {
         const GET_DATA = async () => {
             const data = await api(query.POST)
-            console.log(data, '============DATA')
-
             setPosts(data)
         }
 
