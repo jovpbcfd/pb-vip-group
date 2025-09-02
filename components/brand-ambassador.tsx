@@ -27,7 +27,7 @@ const SLIDES = [
 
 export default function Brandambassador() {
     return (
-        <div className="w-full max-w-[1230px] mx-auto">
+        <div className="w-full max-w-[1230px] mx-auto mt-5 md:my-10">
             <div className="text-center">
                 <h2
                     className="bg-[linear-gradient(90deg,#AA670D_0%,#FAD44B_18%,#F7EC95_31%,#FFC946_47%,#FAC026_61%,#FAEA07_73%,#AA670D_88%,#E09127_100%)] bg-clip-text text-transparent
@@ -37,8 +37,8 @@ export default function Brandambassador() {
                     Brand ambassador
                 </h2>
             </div>
-            <div className="flex items-center mt-10">
-                <Carousel className="mx-auto">
+            <div className="flex items-center mt-5">
+                <Carousel className="mx-auto w-full max-w-[1230px] overflow-hidden">
                     <CarouselContent>
                         {SLIDES.map((item, index) => (
                             <CarouselItem
@@ -53,6 +53,7 @@ export default function Brandambassador() {
                                                 width={300}
                                                 height={500}
                                                 alt={item.name}
+                                                className="md:w-full"
                                             />
                                         </div>
                                         <div className="text-center py-2">

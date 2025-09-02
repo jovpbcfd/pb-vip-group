@@ -4,7 +4,7 @@ import GroupVipBrands from '@/components/vip-brands'
 import AllianceCasino from '@/components/alliance-casino'
 import AllianceJoin from '@/components/alliance-join'
 import NewsAndVideos from '@/components/news-and-videos'
-// import Brandambassador from '@/components/brand-ambassador'
+import Brandambassador from '@/components/brand-ambassador'
 import SecuredAndCertified from '@/components/secured-and-certified'
 import FAQ from '@/components/faq'
 import CustomerSupport from '@/components/customer-support'
@@ -18,7 +18,7 @@ export default function Home() {
             <AllianceCasino />
             <AllianceJoin />
             <NewsAndVideos />
-            {/* <Brandambassador /> */}
+            <Brandambassador />
             <SecuredAndCertified />
             <FAQ />
             <CustomerSupport />
